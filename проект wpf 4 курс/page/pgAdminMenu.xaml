@@ -114,6 +114,6 @@
             </StackPanel>
             <TextBlock Name="txtCurrentPage"/>
         </StackPanel>
-        <ListBox Name="lbUsersList" ItemTemplate="{StaticResource DT1}" Grid.Row="1"/>
+        <ListBox Name="lbUsersList" ItemTemplate="{StaticResource DT1}" Grid.Row="1" SelectionChanged="lbUsersList_SelectionChanged"/>
     </Grid>
 </Page>

@@ -27,5 +27,10 @@ namespace WPF41P
             LoadPages.switchPage = FrameMain;
             BaseConnect.BaseModel = new Entities();
         }
+
+        private void FrameMain_Navigated(object sender, NavigationEventArgs e)
+        {
+
+        }
     }
 }

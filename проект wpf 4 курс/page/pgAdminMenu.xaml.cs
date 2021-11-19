@@ -319,5 +319,10 @@ namespace WPF41P
             USIM = BaseConnect.BaseModel.usersimage.Where(x => x.id_user == ind).ToList();
             MessageBox.Show(Convert.ToString(USIM.Count()));
         }
+
+        private void lbUsersList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
