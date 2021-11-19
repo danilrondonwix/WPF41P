@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace проект_wpf_4_курс
+namespace WPF41P
 {
     /// <summary>
     /// Логика взаимодействия для App.xaml

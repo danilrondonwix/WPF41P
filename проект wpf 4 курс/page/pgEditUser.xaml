@@ -9,8 +9,8 @@
       Title="pgEditUser">
 
     <Grid>
-        <ScrollViewer>
-            <GroupBox Header="Введите данные о себе" Margin="20">
+        <ScrollViewer Background="Black">
+            <GroupBox Header="Введите данные о себе" Margin="20" Foreground="Gold">
                 <StackPanel>
                     <GroupBox Header="Логин пользователя">
                         <TextBox x:Name="txtLogin"  />
@@ -32,15 +32,15 @@
                     </GroupBox>
                     <GroupBox Header="Качества личности пользователя">
                         <StackPanel>
-                            <CheckBox x:Name="ch1st"  ></CheckBox>
-                            <CheckBox x:Name="ch2d" ></CheckBox>
-                            <CheckBox x:Name="ch3d" ></CheckBox>
+                            <CheckBox x:Name="ch1st"  Foreground="Gold"></CheckBox>
+                            <CheckBox x:Name="ch2d" Foreground="Gold"></CheckBox>
+                            <CheckBox x:Name="ch3d" Foreground="Gold"></CheckBox>
                         </StackPanel>
                     </GroupBox>
-                    <Button  Content ="Изменить данные"  Name="btnEdit" Click="btnEdit_Click" >
+                    <Button  Content ="Изменить данные"  Background="Gold" Name="btnEdit" Click="btnEdit_Click" >
 
                     </Button>
-                    <Button Content="Назад" Name="btnBack" Click="btnBack_Click"/>
+                    <Button Content="Назад" Background="Gold" Name="btnBack" Click="btnBack_Click"/>
                 </StackPanel>
             </GroupBox>
         </ScrollViewer>

@@ -10,8 +10,8 @@
 
     <Grid>
         <Grid>
-            <ScrollViewer>
-                <GroupBox Header="Введите данные о себе" Margin="20">
+            <ScrollViewer Background="Black">
+                <GroupBox Header="Введите данные о себе" Margin="20" Foreground="Gold">
                     <StackPanel>
                         <GroupBox Header="Введите логин">
                             <TextBox x:Name="txtLogin"/>
@@ -30,15 +30,15 @@
                         </GroupBox>
                         <GroupBox Header="Введите качества личности">
                             <StackPanel>
-                                <CheckBox x:Name="ch1st"  > </CheckBox>
-                                <CheckBox x:Name="ch2d" ></CheckBox>
-                                <CheckBox x:Name="ch3d" > </CheckBox>
+                                <CheckBox x:Name="ch1st"  Foreground="Gold"> </CheckBox>
+                                <CheckBox x:Name="ch2d" Foreground="Gold"></CheckBox>
+                                <CheckBox x:Name="ch3d" Foreground="Gold"> </CheckBox>
                             </StackPanel>
                         </GroupBox>
-                        <Button  Content ="Зарегестрироваться"  Name="btnRegister" Click="btnRegister_Click" >
+                        <Button  Content ="Зарегестрироваться"  Background="Gold" Name="btnRegister" Click="btnRegister_Click" >
 
                         </Button>
-                        <Button Content="Назад" Name="btnBack" Click="btnBack_Click"/>
+                        <Button Content="Назад" Background="Gold" Name="btnBack" Click="btnBack_Click"/>
                     </StackPanel>
                 </GroupBox>
             </ScrollViewer>

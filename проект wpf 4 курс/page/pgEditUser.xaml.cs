@@ -109,7 +109,7 @@ namespace WPF41P
                     CreateTrait(UserCur, 3);
                 }
                 BaseConnect.BaseModel.SaveChanges();
-                MessageBox.Show("Данные пользователя изменены");
+                MessageBox.Show("Пользовательские данные были изменены!");
             }
             catch (Exception exp)
             {

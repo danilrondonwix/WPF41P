@@ -10,26 +10,26 @@
 
     
         <Grid>
-            <ScrollViewer Grid.Row="1" Grid.Column="1" VerticalScrollBarVisibility="Auto">
+        <ScrollViewer Background="Black" Grid.Row="1" Grid.Column="1" VerticalScrollBarVisibility="Auto">
                 <WrapPanel HorizontalAlignment="Center" VerticalAlignment="Center">
 
 
-                    <GroupBox Header="Информация о вас" Margin="20" Height="315" Width="329">
+                <GroupBox Header="Информация о вас" Margin="20" Height="315" Width="329" Foreground="Gold">
                         <StackPanel>
                             <GroupBox Header="имя">
-                                <TextBlock x:Name="tbName"/>
-                            </GroupBox>
-                            <GroupBox Header=" дата рождения">
+                            <TextBlock x:Name="tbName" Foreground="Gold"/>
+                        </GroupBox>
+                        <GroupBox Header=" дата рождения" Foreground="Gold">
                                 <TextBlock x:Name="tbDR" />
                             </GroupBox>
-                            <GroupBox Header=" пол">
+                        <GroupBox Header=" пол" Foreground="Gold">
                                 <TextBlock  x:Name="tbGender"/>
                             </GroupBox>
-                            <GroupBox Header="качества личности">
+                        <GroupBox Header="качества личности" Foreground="Gold">
                                 <TextBlock x:Name="tbTraits" />
                             </GroupBox>
 
-                            <Button Content="Назад" Name="btnBack"  Click="btnBack_Click"/>
+                        <Button Content="Назад" Background="Gold" Name="btnBack"  Click="btnBack_Click"/>
                         </StackPanel>
                     </GroupBox>
                 </WrapPanel>

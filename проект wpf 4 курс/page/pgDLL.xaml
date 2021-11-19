@@ -7,8 +7,8 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="pgDLL">
-    
-    <Grid>
+
+    <Grid Background ="Black">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
@@ -17,16 +17,16 @@
             <RowDefinition Height="53*"/>
         </Grid.RowDefinitions>
         <StackPanel  Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Button Content="Показать средний возраст пользователей" Name="btnVozrast" Click="btnVozrast_Click">
+            <Button Content="Показать средний возраст пользователей" Background ="Gold" Name="btnVozrast" Click="btnVozrast_Click">
 
             </Button>
             <TextBox x:Name="txtName"></TextBox>
-            <Button Content="Найти пользователей" Name="btnFind" Click="btnFind_Click"></Button>
-            <Button Content="Вернуть все как было" Click="Button_Click" ></Button>
-            <Button Content="Назад" Name="btnBack" Click="btnBack_Click"></Button>
+            <Button Content="Найти пользователей" Background ="Gold" Name="btnFind" Click="btnFind_Click"></Button>
+            <Button Content="Вернуть все как было" Background ="Gold" Click="Button_Click" ></Button>
+            <Button Content="Назад" Name="btnBack" Background ="Gold" Click="btnBack_Click"></Button>
         </StackPanel>
         <ScrollViewer Grid.Row="1">
-        <TextBlock Name="Users"  Grid.Row="1"/>
+            <TextBlock Name="Users"  FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground ="Gold" Grid.Row="1"/>
         </ScrollViewer>
     </Grid>
 </Page>

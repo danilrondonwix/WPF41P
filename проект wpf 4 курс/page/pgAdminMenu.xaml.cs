@@ -57,7 +57,7 @@ namespace WPF41P
             }
             catch (Exception exp)
             {
-                MessageBox.Show("Возникла  ошибка" + exp.Message);
+                MessageBox.Show("Возникла  ошибка!" + exp.Message);
             }
         }
 
@@ -96,7 +96,7 @@ namespace WPF41P
             }
             catch (Exception exp)
             {
-                MessageBox.Show("Возникла  ошибка" + exp.Message);
+                MessageBox.Show("Возникла  ошибка!" + exp.Message);
             }
         }
 
@@ -174,13 +174,13 @@ namespace WPF41P
                 switch (U.gender)
                 {
                     case 1:
-                        BI = new BitmapImage(new Uri(@"/res/Dog.jpg", UriKind.Relative));
+                        BI = new BitmapImage(new Uri(@"/res/pesik.jpg", UriKind.Relative));
                         break;
                     case 2:
-                        BI = new BitmapImage(new Uri(@"/res/Panda.jpg", UriKind.Relative));
+                        BI = new BitmapImage(new Uri(@"/res/svinka.jpg", UriKind.Relative));
                         break;
                     default:
-                        BI = new BitmapImage(new Uri(@"/res/unnamed.jpg", UriKind.Relative));
+                        BI = new BitmapImage(new Uri(@"/res/novie noski.jpg", UriKind.Relative));
                         break;
                 }
             }
@@ -249,11 +249,11 @@ namespace WPF41P
                     usersimage UI = new usersimage() { id_user = ind, image = ByteArr };//создаем новый объект usersimage
                     BaseConnect.BaseModel.usersimage.Add(UI);//добавляем его в модель
                     BaseConnect.BaseModel.SaveChanges();//синхронизируем с базой
-                    MessageBox.Show("Картинка пользователя добавлена в базу");
+                    MessageBox.Show("Пользовательская картинка добавлена в базу данных!");
                 }
                 else
                 {
-                    MessageBox.Show("Вы не выбрали фото");
+                    MessageBox.Show("Выберите фото!");
                 }
             }
             else if (USIM.Count >= 1)
@@ -280,7 +280,7 @@ namespace WPF41P
                 }
                 else
                 {
-                    MessageBox.Show("Вы не выбрали фото");
+                    MessageBox.Show("Выберите фото!");
                 }
             }
             users = BaseConnect.BaseModel.users.ToList();

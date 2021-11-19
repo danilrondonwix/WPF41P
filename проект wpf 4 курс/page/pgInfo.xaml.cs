@@ -38,7 +38,7 @@ namespace WPF41P
             catch
             (Exception exp)
             {
-                MessageBox.Show("Возникла  ошибка" + exp.Message);
+                MessageBox.Show("Возникла  ошибка!" + exp.Message);
             }
 
         }

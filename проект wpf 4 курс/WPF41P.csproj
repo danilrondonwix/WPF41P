@@ -225,12 +225,11 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Resource Include="res\novie noski.jpg" />
+    <Resource Include="res\pesik.jpg" />
+    <Resource Include="res\svinka.jpg" />
     <Resource Include="res\rakovina.jpg" />
     <Resource Include="res\stolovka.jpg" />
-    <Resource Include="res\Dog.jpg" />
-    <Resource Include="res\Panda.jpg" />
-    <Resource Include="res\3733.png" />
-    <Resource Include="res\Niva-FAM1.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

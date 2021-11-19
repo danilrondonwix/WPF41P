@@ -12,18 +12,18 @@
 
         <ControlTemplate TargetType="Button" x:Key="EditUser" >
             <Border  HorizontalAlignment="Right" VerticalAlignment="Center">
-                <TextBlock Foreground="Blue" Text="Редактировать пользователя"  HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                <TextBlock Foreground="Gold" Text="Редактировать пользователя"  HorizontalAlignment="Right" VerticalAlignment="Center"/>
             </Border>
 
         </ControlTemplate>
         <ControlTemplate TargetType="Button" x:Key="Delete" >
             <Border  HorizontalAlignment="Right" VerticalAlignment="Center">
-                <TextBlock Foreground="Blue" Text="Удалить пользователя"  HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                <TextBlock Foreground="Gold" Text="Удалить пользователя"  HorizontalAlignment="Right" VerticalAlignment="Center"/>
             </Border>
         </ControlTemplate>
         <ControlTemplate TargetType="Button" x:Key="AddPhoto" >
             <Border  HorizontalAlignment="Right" VerticalAlignment="Center">
-                <TextBlock Foreground="Blue" Text="Добавить пользователю фото / Изменить фото пользователя"  HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                <TextBlock Foreground="Gold" Text="Добавить пользователю фото / Изменить фото пользователя"  HorizontalAlignment="Right" VerticalAlignment="Center"/>
             </Border>
 
        
@@ -31,20 +31,20 @@
         <DataTemplate x:Key="DT1">
             <!--Шаблон для вывода информации о пользователе-->
             <StackPanel>
-                <GroupBox Header="имя">
-                    <TextBlock Text="{Binding name}"/>
+                <GroupBox Header="имя" Foreground ="Gold">
+                    <TextBlock Text="{Binding name}" Background="Black"/>
                 </GroupBox>
-                <GroupBox Header=" дата рождения">
-                    <TextBlock Text="{Binding dr, StringFormat={}{0:dd.MM.yyyy}}"/>
+                <GroupBox Header=" дата рождения" Background ="Black">
+                    <TextBlock Text="{Binding dr, StringFormat={}{0:dd.MM.yyyy}}" Foreground="Gold"/>
                     <!--указание формата вывода даты-->
                 </GroupBox>
-                <GroupBox Header=" пол">
-                    <TextBlock Text="{Binding genders.gender}"/>
+                <GroupBox Header=" пол" Foreground ="Gold">
+                    <TextBlock Text="{Binding genders.gender}" Background="Black"/>
                     <!--переход к сущности genders, т.к. в users содержится только id пола-->
                 </GroupBox>
-                <GroupBox Header="качества личности">
+                <GroupBox Header="качества личности" Foreground ="Gold"> 
                     <!--тут будет вложенный список, т.к. связи многие ко многим-->
-                    <ListBox Name="lbTraits" Loaded="lbTraits_Loaded" Uid="{Binding id}"/>
+                    <ListBox Name="lbTraits" Loaded="lbTraits_Loaded" Uid="{Binding id}" Background="Black" Foreground ="Gold"/>
                     <!--loaded - событие, которое происходит при создании элемента списка из шаблона-->
                 </GroupBox>
                 <Image x:Name="UserImage" Loaded="UserImage_Loaded"  Width="150"  Height="150" Uid="{Binding id}"/>
@@ -62,7 +62,10 @@
                     <Button Template="{StaticResource AddPhoto}"   x:Name="AddAvatar" HorizontalAlignment="Right" VerticalAlignment="Center"   Click="AddAvatar_Click" Uid ="{Binding id}"/>
                     <!--loaded - событие, которое происходит при создании элемента списка из шаблона-->
                 </StackPanel>
-                
+                <StackPanel Margin="5" >
+                    <Line Stretch="Fill" Stroke="White" X2="1" HorizontalAlignment="Stretch"/>
+                </StackPanel>
+
             </StackPanel>
         </DataTemplate>
     </Page.Resources>
@@ -71,34 +74,34 @@
             <RowDefinition Height="55"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <StackPanel Grid.Row="0"  Orientation="Horizontal">
-            <GroupBox Header="от">
+        <StackPanel Grid.Row="0"  Orientation="Horizontal" Background ="Black">
+            <GroupBox Header="от" Background ="Black" Foreground ="Gold">
                 <TextBox Name="txtOT" Width="50"/>
             </GroupBox>
-            <GroupBox Header="до">
+            <GroupBox Header="до" Background ="Black" Foreground ="Gold">
                 <TextBox Name="txtDO" Width="50"/>
             </GroupBox>
-            <GroupBox Header="выберите пол">
-                <ComboBox x:Name="lbGenderFilter" SelectionChanged="Filter"/>
+            <GroupBox Header="выберите пол"  Background ="Black" Foreground ="Gold">
+                <ComboBox x:Name="lbGenderFilter" SelectionChanged="Filter" />
             </GroupBox>
-            <GroupBox Header="часть имени">
+            <GroupBox Header="часть имени" Background ="Black" Foreground ="Gold">
                 <TextBox Name="txtNameFilter" TextChanged="Filter"/>
             </GroupBox>
-            <Button Name="btnGo" Content="Вывести" Click="Filter" Width="50" Margin="5"/>
-            <Button Name="btnReset" Content="Сброс" Click="btnReset_Click" Width="50" Margin="5"/>
-            <Button x:Name="btnNewUser" Content="Добавить пользователя"  Margin="5" Click="btnNewUser_Click"></Button>
-            <GroupBox Header="Сколько вывести пользователь">
+            <Button Name="btnGo" Content="Вывести" Click="Filter" Width="50" Margin="5" Background ="Gold"/>
+            <Button Name="btnReset" Content="Сброс" Click="btnReset_Click" Width="50" Margin="5" Background ="Gold"/>
+            <Button x:Name="btnNewUser" Content="Добавить пользователя"  Margin="5" Click="btnNewUser_Click" Background ="Gold"></Button>
+            <GroupBox Header="Сколько вывести пользователь" Background ="Black" Foreground ="Gold">
                 <TextBox Name="txtPageCount" TextChanged="txtPageCount_TextChanged" />
             </GroupBox>
-            <GroupBox Header="Сортировка">
+            <GroupBox Header="Сортировка" Background ="Black" Foreground ="Gold">
                 <StackPanel Orientation="Horizontal">
                     <StackPanel>
-                        <RadioButton x:Name="sz" Content ="по имени" Click="Sort_Click" Uid="name"/>
-                        <RadioButton x:Name="szz" Content ="по дате рождения" Click="Sort_Click" Uid="DR"/>
+                        <RadioButton x:Name="sz" Foreground ="Gold" Content ="по имени" Click="Sort_Click" Uid="name"/>
+                        <RadioButton x:Name="szz" Foreground ="Gold" Content ="по дате рождения" Click="Sort_Click" Uid="DR"/>
                     </StackPanel>
                     <StackPanel>
-                        <RadioButton  x:Name="szzz" Content ="по возрастанию" Click="Sort_Click"/>
-                        <RadioButton  x:Name="RBReverse" Content ="по убыванию" Click="Sort_Click"/>
+                        <RadioButton  x:Name="szzz" Foreground ="Gold" Content ="по возрастанию" Click="Sort_Click"/>
+                        <RadioButton  x:Name="RBReverse" Foreground ="Gold" Content ="по убыванию" Click="Sort_Click"/>
                     </StackPanel>
                 </StackPanel>
             </GroupBox>
@@ -114,6 +117,6 @@
             </StackPanel>
             <TextBlock Name="txtCurrentPage"/>
         </StackPanel>
-        <ListBox Name="lbUsersList" ItemTemplate="{StaticResource DT1}" Grid.Row="1" SelectionChanged="lbUsersList_SelectionChanged"/>
+        <ListBox Name="lbUsersList" Background =" Black"  ItemTemplate="{StaticResource DT1}" Grid.Row="1" SelectionChanged="lbUsersList_SelectionChanged"/>
     </Grid>
 </Page>

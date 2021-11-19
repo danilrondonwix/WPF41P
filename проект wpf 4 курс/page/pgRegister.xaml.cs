@@ -73,7 +73,7 @@ namespace WPF41P
                     BaseConnect.BaseModel.users_to_traits.Add(users_To_Traits);
                 }
                 BaseConnect.BaseModel.SaveChanges();
-                MessageBox.Show("Успешная регистрация");
+                MessageBox.Show("Регистрация прошла успешно!");
             }
             catch (Exception exp)
             {

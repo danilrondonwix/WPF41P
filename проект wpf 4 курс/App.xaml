@@ -10,7 +10,7 @@
                 <Setter Property="Foreground" Value="black"/>
             </Style>
             <Style TargetType="TextBlock" x:Key="reklama">
-                <Setter Property="Background" Value="Yellow"/>
+                <Setter Property="Background" Value="Gold"/>
             </Style>
            
   

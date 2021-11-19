@@ -38,7 +38,7 @@ namespace WPF41P
             {
                 dates.Add(userss.dr);
             }
-            MessageBox.Show("Срединй возраст пользователей " + Class1.VozrastUser(dates));
+            MessageBox.Show("Средний возраст пользователей! " + Class1.VozrastUser(dates));
         }
 
         private void btnFind_Click(object sender, RoutedEventArgs e)
@@ -53,14 +53,14 @@ namespace WPF41P
 
             if (txtName.Text == "")
             {
-                MessageBox.Show("Введите параметр поиска");
+                MessageBox.Show("Укажите параметр поиска!");
             }
             else
             {
 
                 if (Class1.ListUserow(names, txtName.Text).Count == 0)
                 {
-                    MessageBox.Show("Ничего не найдено");
+                    MessageBox.Show("Ничего не найдено!");
                 }
                 else
                 {

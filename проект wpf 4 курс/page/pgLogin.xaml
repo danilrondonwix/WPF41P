@@ -9,8 +9,8 @@
       Title="pgLogin">
 
     <Grid>
-        <ScrollViewer>
-        <GroupBox Header="Введите данные о себе">
+        <ScrollViewer Background="Black">
+            <GroupBox Header="Введите данные о себе" Background="Black" Foreground="Gold">
             <StackPanel Orientation="Vertical">
                 <GroupBox Header="введите логин" >
                     <TextBox x:Name="txtLogin"/>
@@ -18,13 +18,13 @@
                 <GroupBox Header="введите пароль">
                     <PasswordBox x:Name="txtPassword"/>
                 </GroupBox>
-                <Button Content ="Авторизация" Name="btnAutorise" Click="btnAutorise_Click" HorizontalAlignment="Stretch">
+                    <Button Content ="Авторизация" Background="Gold" Name="btnAutorise" Click="btnAutorise_Click" HorizontalAlignment="Stretch">
                     
                 </Button>
-                <Button Content ="Регистрация" Name="btnRegistr" Click="btnRegistr_Click" HorizontalAlignment="Stretch"> 
+                    <Button Content ="Регистрация" Background="Gold" Name="btnRegistr" Click="btnRegistr_Click" HorizontalAlignment="Stretch"> 
                     
                 </Button>
-                    <Button Content ="Работа с DLL" Name="btnDLL" Click="btnDLL_Click"  HorizontalAlignment="Stretch">
+                    <Button Content ="Работа с DLL" Background="Gold" Name="btnDLL" Click="btnDLL_Click"  HorizontalAlignment="Stretch">
 
                     </Button>
 

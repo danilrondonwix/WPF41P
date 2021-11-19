@@ -36,12 +36,12 @@ namespace WPF41P
                     switch (CurrentUser.role)
                     {
                         case 1:
-                            MessageBox.Show("Вы вошли как администратор");
+                            MessageBox.Show("Добро пожаловать, администратор!");
                             LoadPages.switchPage.Navigate(new pgAdminMenu());
                             break;
                         case 2:
                         default:
-                            MessageBox.Show("Вы вошли как обычный пользователь");
+                            MessageBox.Show("Добро пожаловать, пользователь!");
                             LoadPages.switchPage.Navigate(new pgInfo(CurrentUser));
                             break;
 
@@ -50,12 +50,12 @@ namespace WPF41P
                 }
                 else
                 {
-                    MessageBox.Show("Пользователь не зарегестрирован");
+                    MessageBox.Show("Пользователь не зарегистрирован!");
                 }
             }
             catch (Exception exp)
             {
-                MessageBox.Show("Возникла  ошибка" + exp.Message);
+                MessageBox.Show("Возникла  ошибка!" + exp.Message);
             }
 
         }
