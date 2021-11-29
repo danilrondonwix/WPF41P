@@ -63,6 +63,10 @@
                     <!--loaded - событие, которое происходит при создании элемента списка из шаблона-->
                 </StackPanel>
                 <StackPanel Margin="5" >
+                    <Button  x:Name="Gallery" HorizontalAlignment="Right" VerticalAlignment="Center"   Click="Gallery_Click" Uid ="{Binding id}" Content="Зайти в галерею пользователя" Background ="Black" Foreground ="Gold"/>
+                    <!--loaded - событие, которое происходит при создании элемента списка из шаблона-->
+                </StackPanel>
+                <StackPanel Margin="5" >
                     <Line Stretch="Fill" Stroke="White" X2="1" HorizontalAlignment="Stretch"/>
                 </StackPanel>
 
@@ -107,15 +111,15 @@
             </GroupBox>
             
             <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
-                <TextBlock Name="txtPrev" Uid="prev" Text=" Пред. " MouseDown="txtPrev_MouseDown"/>
-                <TextBlock Name="txt1" Uid="1" Text="{Binding  Path = NPage[0], StringFormat={}{0,3}}" Visibility="{Binding Visible[0]}" FontWeight="{Binding Bold[0]}" MouseDown="txtPrev_MouseDown"/>
-                <TextBlock Name="txt2" Uid="2" Text="{Binding  Path = NPage[1], StringFormat={}{0,3}}" Visibility="{Binding Visible[1]}" FontWeight="{Binding Bold[1]}" MouseDown="txtPrev_MouseDown"/>
-                <TextBlock Name="txt3" Uid="3" Text="{Binding  Path = NPage[2], StringFormat={}{0,3}}" Visibility="{Binding Visible[2]}" FontWeight="{Binding Bold[2]}" MouseDown="txtPrev_MouseDown"/>
-                <TextBlock Name="txt4" Uid="4" Text="{Binding  Path = NPage[3], StringFormat={}{0,3}}" Visibility="{Binding Visible[3]}" FontWeight="{Binding Bold[3]}" MouseDown="txtPrev_MouseDown"/>
-                <TextBlock Name="txt5" Uid="5" Text="{Binding  Path = NPage[4], StringFormat={}{0,3}}" Visibility="{Binding Visible[4]}" FontWeight="{Binding Bold[4]}" MouseDown="txtPrev_MouseDown"/>
-                <TextBlock Name="txtNext" Uid="next" Text=" След." MouseDown="txtPrev_MouseDown"/>
+                <TextBlock Name="txtPrev" Uid="prev" Text=" Пред. " MouseDown="txtPrev_MouseDown" Foreground ="Gold"/>
+                <TextBlock Name="txt1" Uid="1" Text="{Binding  Path = NPage[0], StringFormat={}{0,3}}" Visibility="{Binding Visible[0]}" FontWeight="{Binding Bold[0]}" MouseDown="txtPrev_MouseDown" Foreground ="Gold"/>
+                <TextBlock Name="txt2" Uid="2" Text="{Binding  Path = NPage[1], StringFormat={}{0,3}}" Visibility="{Binding Visible[1]}" FontWeight="{Binding Bold[1]}" MouseDown="txtPrev_MouseDown" Foreground ="Gold"/>
+                <TextBlock Name="txt3" Uid="3" Text="{Binding  Path = NPage[2], StringFormat={}{0,3}}" Visibility="{Binding Visible[2]}" FontWeight="{Binding Bold[2]}" MouseDown="txtPrev_MouseDown" Foreground ="Gold"/>
+                <TextBlock Name="txt4" Uid="4" Text="{Binding  Path = NPage[3], StringFormat={}{0,3}}" Visibility="{Binding Visible[3]}" FontWeight="{Binding Bold[3]}" MouseDown="txtPrev_MouseDown" Foreground ="Gold"/>
+                <TextBlock Name="txt5" Uid="5" Text="{Binding  Path = NPage[4], StringFormat={}{0,3}}" Visibility="{Binding Visible[4]}" FontWeight="{Binding Bold[4]}" MouseDown="txtPrev_MouseDown" Foreground ="Gold"/>
+                <TextBlock Name="txtNext" Uid="next" Text=" След." MouseDown="txtPrev_MouseDown" Foreground ="Gold"/>
             </StackPanel>
-            <TextBlock Name="txtCurrentPage"/>
+            <TextBlock Name="txtCurrentPage" Foreground ="Gold"/>
         </StackPanel>
         <ListBox Name="lbUsersList" Background =" Black"  ItemTemplate="{StaticResource DT1}" Grid.Row="1" SelectionChanged="lbUsersList_SelectionChanged"/>
     </Grid>

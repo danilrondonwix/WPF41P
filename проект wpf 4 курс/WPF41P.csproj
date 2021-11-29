@@ -94,6 +94,9 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="PageChange.cs" />
+    <Compile Include="PageGallery.xaml.cs">
+      <DependentUpon>PageGallery.xaml</DependentUpon>
+    </Compile>
     <Compile Include="page\pgAdminMenu.xaml.cs">
       <DependentUpon>pgAdminMenu.xaml</DependentUpon>
     </Compile>
@@ -139,6 +142,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="PageGallery.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="page\pgAdminMenu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
